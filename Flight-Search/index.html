@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Flight Search</title>
+    <link rel="website icon" type="png" href="./assets/image/pngwing.com.png">
+</head>
+<body>
+    <!-- header start -->
+   <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo">
+        <span>M</span>iles&Smiles
+    </a>
+    <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#book">Campaigns</a>
+        <a href="#Home">Corporate</a>
+        <a href="#Home">Travel services</a>
+        <a href="#Home">City Guides</a>
+        <a href="#Home">Home</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar"  class="fas fa-search" ></label>
+
+    </form>
+   </header>
+<!-- header end -->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">Click Here</a></p>
+        <p>don't have and account?<a href="#">Register Now</a></p>
+    </form>
+
+</div>
+
+<!-- section start -->
+<section class="home" id="home">
+    <div class="content">
+        <a href="#" class="btn">Lorem, ipsum.</a>
+    </div>
+    <div class="controls">
+        <span class="vid-btn active" data-src="./assets/video/2.mp4"></span>
+        <span class="vid-btn" data-src="./assets/video/natural.mp4"></span>
+        <span class="vid-btn" data-src=""></span>
+        <span class="vid-btn" data-src=""></span>
+        <span class="vid-btn" data-src=""></span>
+
+    </div>
+    <div class="video-container">
+        <video src="./assets/video/2.mp4" id="video-slider" loop autoplay muted></video>
+        <video src=""></video>
+    </div>
+
+
+</section>
+<!-- Section end -->
+<!-- section book start -->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>B</span>
+        <span>u</span>
+        <span>y</span>
+        <span class="space"></span>
+        <span>f</span>
+        <span>l</span>
+        <span>i</span>
+        <span>g</span>
+        <span>h</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>t</span>
+        <span>i</span>
+        <span>c</span>
+        <span>k</span>
+        <span>e</span>
+        <span>t</span>
+        <span>s</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img  class="img" src="./assets/image/airplane.969b2a3d.png" alt="">
+        </div>
+        <form action="" id="ticketForm">
+                    <section id="ticketType" onchange="gosterGizle()">
+                        <input type="radio" name="fav_language" value="HTML">
+                        <label>One way</label>
+                        <input type="radio" id="return"  value="return">
+                        <label>Return</label>
+                    </section><br/>
+            <div class="inputBox">
+                <h3>Where from</h3>
+                <input type="text" placeholder="Enter origin city" class="form-control mt-4">
+            </div>
+            <div class="inputBox">
+                <h3>Where to</h3>
+                <input type="text" placeholder="Enter destination city" class="form-control mt-2">
+            </div>
+            
+            <label for="gidisTarih">Gidiş Tarihi:</label>
+            <input type="date" class="gidisTarih" id="travelDate"><br><br>
+            <label for="donusTarih" id="donusLabel">Dönüş Tarihi:</label>
+            <input type="date" id="donusTarih"><br><br>
+            <!--  -->
+            <div class="inputBox">
+                <h3>Date</h3>
+                <input type="date" id="travelDate">
+    
+        
+                    <!-- <label for="donusTarih" id="donusLabel">Dönüş Tarihi:</label>
+                    <input type="date" id="donusTarih"><br><br> -->
+            </div>
+            <div class="d-flex justify-content-center mt-2 ">
+                <button type="button" id="minusButton">-</button>
+                <div class="text-muted" id="number">1 passengers</div>
+                <button type="button" id="plusButton" class="">+</button>
+            </div>
+            <div class="justify-content-center d-flex">
+                    <button   type="button"  id="checkButton" class="btn">
+                        <a href="destination-page.html">Search</a></button>
+                    <p id="message"></p>
+                </button>
+                <p id="message"></p>
+            </div>
+            <form id="ticketForm" action="destination-page.html" method="post">
+
+        </form>
+    </div>
+</section>
+<!-- Section book end -->
+<!-- section -packges start -->
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="./assets/image/mumbai.webp" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> mumbai</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, aspernatur.</p>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$90.0 <span>$120.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/image/dubai.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Dubai</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, aspernatur.</p>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$90.0 <span>$120.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/image/italya.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> İtaly</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, aspernatur.</p>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$90.0 <span>$120.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/image/egypt.jfif" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> egypt</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, aspernatur.</p>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$90.0 <span>$120.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/image/france.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> mumbai</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, aspernatur.</p>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$90.0 <span>$120.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./assets/image/canada.webp" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> mumbai</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, aspernatur.</p>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$90.0 <span>$120.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section-packges end -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
